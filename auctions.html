@@ -1,0 +1,16 @@
+<!DOCTYPE html><html class=no-js><head><meta charset=utf-8><title>showshop prototype</title><meta name=description content=""><meta name=viewport content="width=device-width"><link rel="shortcut icon" href=/6df2b309.favicon.ico><!-- Place favicon.ico and apple-touch-icon.png in the root directory --><link rel=stylesheet href=styles/c7403260.main.css><body><!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]--><div class=container><ul class=cards-list><li ng-repeat="auction in auctions"><div class=card><img ng-src="{{ auction.image }}" class=img-cover><div class=card-body><h4><a href=#>{{auction.product_name}}</a></h4><small>Lance atual: <strong class=current-bid>{{auction.price| currency:"R$"}}</strong></small><br><small>Restam <strong class=countdown-timer ng-class="{'timing-out': auction.timing_out}">{{auction.time_left | date:"mm:ss"}}</strong> para o fim do leilão</small><br><small><strong>{{auction.counter}}</strong> lance(s)</small></div><a href=# class="card-bottom card-display" data-product-detail=product-detail-1>VER MAIS</a></div></li></ul></div><script src=scripts/d24ded32.vendor.js></script><!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --><script>(function(b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] || (b[l] =
+        function() {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+      b[l].l = +new Date;
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = '//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');</script><script src=scripts/6b5da0e8.plugins.js></script><script src=scripts/c49f8bf7.main.js></script>
